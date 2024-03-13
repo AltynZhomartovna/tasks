@@ -1,0 +1,141 @@
+#10
+//Task 9: Use a for loop to print "Yes" 5 times. Используйте цикл for, чтобы напечатать "Yes" 5 раз.
+public class Main{
+    public static void main(String[] args ){
+        for(int i=0;i<5;i++){
+            System.out.println("Yes");
+        }
+    }
+}
+//Task 22: For loop, Write a program that displays the squares of the first 10
+//natural numbers on the screen.
+public class Main{
+    public static void main(String[] args ){
+        for(int i=1;i<11;i++){
+            System.out.println(i*i);
+        }
+    }
+}
+/*Task 35: Write a program that asks the user for a number and checks whether
+it is even or odd, and displays the result on the screen.*/
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner obj= new Scanner(System.in);
+        System.out.print("Number:");
+        int num=obj.nextInt();
+        if(num%2==0){
+            System.out.println("Its even");
+        }else{
+            System.out.println("Its odd");
+        }
+    }
+}
+/*Task 48: Write a program that checks whether a given number is positive,
+negative, or zero.*/
+public class Main{
+    public static void main(String[] args){
+        int num=5;
+        if(num>0){
+            System.out.println("Positive");
+        }else if(num<0){
+            System.out.println("Negative");
+        }else{
+            System.out.println("Zero");
+        }
+    }
+}
+/*Task 61.Create a code that takes enter hight of triangle, length of the base of
+triangle. Program should execute area of triangle. Where are = (heigh*length)
+/ 2. Try without Scanner method.
+*/
+public class Main{
+    public static void main(String[] args){
+        int height=5;
+        int base=4;
+        int f=(height*base)/2;
+        System.out.println(f);
+    }
+}
+/*Task 74. Write a program that takes three integers and prints the largest among them.
+ For example, (5, 8, 7) ➞ 8. Hint: initializes a variable, assign max variable, compare if its larger update value.
+*/
+public class Main {
+    public static void main(String[] args) {
+        int num1 = 5;
+        int num2 = 8;
+        int num3 = 7;
+
+        // Initialize max variable
+        int max = num1;
+
+        // Compare num2 with max
+        if (num2 > max) {
+            max = num2;
+        }
+
+        // Compare num3 with max
+        if (num3 > max) {
+            max = num3;
+        }
+
+        // Print the largest number
+        System.out.println("The largest number is: " + max);
+    }
+}
+/*87 Ask user to enter their name, create a code that print their name 5 times
+*/
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please enter your name: ");
+        String name = scanner.nextLine();
+        for (int i = 0; i < 5; i++) {
+            System.out.println(name);
+        }
+    }
+}
+/*Task100
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the base number: ");
+        int base = scanner.nextInt();
+        System.out.print("Enter the exponent number: ");
+        int exponent = scanner.nextInt();
+        int result = 1; 
+        for (int i = 1; i <= exponent; i++) {
+            result *= base; 
+        }
+        System.out.println(result);
+    }
+}
+//Task 13: Write a program using a for loop that displays all the numbers from
+//10 to 1 in descending orderimport java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        for (int i = 10; i >=1; i--) {
+            System.out.println(i);
+        }
+    }
+}
+
+
+//TTask 26: Write a program using for loop, when the value is "4", go directly to
+//the next value.
+public class Main {
+    public static void main(String[] args) {
+        for (int i = 1; i <=10; i--) {
+            if(i==4){
+                continue;
+            }
+            System.out.println(i);
+        }
+    }
+}
+
+
+
+

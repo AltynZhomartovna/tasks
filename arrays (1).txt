@@ -1,0 +1,129 @@
+
+//9.Find the minimum element in an array
+public class Main {
+    public static void main(String[] args) {
+        int[] array = {4, 7, 2, 9, 1, 5};
+        int min = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] < min) {
+                min = array[i];
+            }
+        }
+        System.out.println("The minimum element in the array is: " + min);
+    }
+}
+//22.Print Multiplication Table: Write nested loops to print the multiplication table of a given number.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number: ");
+        int number = scanner.nextInt();
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(number + " x " + i + " = " + (number * i));
+        }
+    }
+}
+//35.Create an array of numbers. Write a program that displays every even number in the array. 
+public class Main{
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        System.out.println("Even numbers in the array:");
+        for (int number : numbers) {
+            if (number % 2 == 0) {
+                System.out.println(number);
+            }
+        }
+    }
+}
+//48.Write a program that counts down from 10 to 1.
+public class Main {
+    public static void main(String[] args) {
+        for (int i = 10; i >=1; i--) {
+            System.out.println(i);
+        }
+    }
+}
+//61.Write a program that sorts the elements of an array of integers in ascending order and outputs a sorted array.
+import java.util.Arrays;
+public class Main {
+    public static void main(String[] args) {
+        int[] array = {5, 2, 9, 1, 7, 3};
+        Arrays.sort(array);
+        System.out.println("Sorted array in ascending order:");
+        for (int num : array) {
+            System.out.print(num + " ");
+        }
+    }
+}
+//74.Given an array {"Volvo", "BMW", "Ford", "Mazda"}, change the first element to "Porsche"
+public class Main {
+    public static void main(String[] args) {
+        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+        cars[0] = "Porsche";
+        for (String car : cars) {
+            System.out.println(car);
+        }
+    }
+}
+//87.For циклын пайдаланып 20-дан 30 дейінгі жұп сандарды шығар
+public class Main {
+    public static void main(String[] args) {
+        for (int i=20;i<=30;i++) {
+            if(i%2==0){
+                System.out.println(i);
+            }
+
+        }
+    }
+}
+//100.Print "Java is fun!" 3 times: Use a loop to print the phrase "Java is fun!" 3 times.
+public class Main {
+    public static void main(String[] args) {
+        for (int i=0;i<3;i++) {
+            System.out.println("Java is fun!");
+
+        }
+    }
+}
+//13.Swap the first and the last elements of the array.
+public class Main {
+    public static void main(String[] args) {
+        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+        String t = cars[0];
+        cars[0] = cars[cars.length - 1];
+        cars[cars.length - 1] = t;
+        for (String car : cars) {
+            System.out.println(car);
+        }
+    }
+}
+//26.Create an array of numbers. Calculate and print the average of all elements in the array.
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers = {10, 20, 30, 40, 50};
+        int sum = 0;
+        for (int number : numbers) {
+            sum += number;
+        }
+        double average = (double) sum / numbers.length;
+        System.out.println(average);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

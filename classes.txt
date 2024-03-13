@@ -1,0 +1,88 @@
+//9.Create a class "Rectangle" with attributes: length and width. 
+Implement a method to calculate the area of the rectangle and a method to calculate the perimeter. 
+Create an object of a rectangle and display its area and perimeter. 
+public class Main {
+    int length;
+    int width;
+    public static void main(String[] args) {
+        Main rectangle = new Main();
+        rectangle.length = 5;
+        rectangle.width = 3;
+        int area = rectangle.length * rectangle.width;
+        int perimeter = 2 * (rectangle.length + rectangle.width);
+        System.out.println("Area of the rectangle: " + area);
+        System.out.println("Perimeter of the rectangle: " + perimeter);
+    }
+}
+//22.Construct a Java class named Car. Cars possess attributes such as make (String) and year of manufacture (int). 
+Instantiate a car with make "Toyota" and year "2022". Print out the car's make and year.
+public class Car {
+    String mark;
+    int year;
+    public static void main(String[] args) {
+        Car obj = new Car();
+        obj.mark= "Toyota";
+        obj.year = 2022;
+        System.out.println("Car's make: " + obj.mark);
+        System.out.println("Car's year: " + obj.year);
+    }
+}
+//35. Develop a Java class named Exercise. Exercises have attributes like name (String) and duration in minutes
+ (int). Create an exercise called "Running" with a duration of 30 minutes. Display the exercise name and duration.
+public class Exercise {
+    String name;
+    int durtion;
+    public static void main(String[] args) {
+        Exercise obj = new Exercise();
+        obj.name= "Running";
+        obj.durtion = 30;
+        System.out.println("The exercise's that we'll do "+obj.name+" and it lasts for "+ obj.durtion+" minutes");
+    }
+}
+/*48.Create a Java class named Book with two attributes: title(string)  and author(string) . 
+Then, create an instance of the Book class representing a book titled "Java" written by "John".
+Then, print the title and author of the book.*/
+public class Book {
+    String title;
+    String author;
+    public static void main(String[] args) {
+        Book obj = new Book();
+        obj.title= "Java";
+        obj.author = "John";
+        System.out.println("The title of the book "+obj.title+" and its author is "+ obj.author);
+    }
+}
+/*61.Create a "Computer" class with the "model" and "price" fields. 
+Write a method to compare the prices of two computers. Create several objects of this class and compare their prices.*/
+public class Computer {
+    String model;
+    int price;
+    public static void comparePrices(Computer comp1, Computer comp2) {
+        if (comp1.price < comp2.price) {
+            System.out.println(comp1.model + " is cheaper than " + comp2.model);
+        } else if (comp1.price > comp2.price) {
+            System.out.println(comp1.model + " is more expensive than " + comp2.model);
+        } else {
+            System.out.println(comp1.model + " has the same price as " + comp2.model);
+        }
+    }
+    public static void main(String[] args) {
+        Computer comp1 = new Computer();
+        comp1.model = "Asus";
+        comp1.price = 32154512;
+
+        Computer comp2 = new Computer();
+        comp2.model = "Acer";
+        comp2.price = 46846878;
+
+        Computer comp3 = new Computer();
+        comp3.model = "HP";
+        comp3.price = 84654654;
+        comparePrices(comp1, comp2);
+        comparePrices(comp2, comp3);
+        comparePrices(comp1, comp3);
+    }
+}
+
+
+
